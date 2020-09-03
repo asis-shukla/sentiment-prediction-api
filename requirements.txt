@@ -4,5 +4,4 @@ flask-restful
 uwsgi
 matplotlib
 scikit-learn
-pickle
 requests
