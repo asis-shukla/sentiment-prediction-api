@@ -48,9 +48,15 @@ class PredictSentiment(Resource):
         return output
 
 
+class OnlyTest(Resource):
+    def get(self):
+        return {"test message": "This api is working fine, send 'query' parameter as JSON object using GET"}
+
+
 # Setup the Api resource routing here
 # Route the URL to the resource
-api.add_resource(PredictSentiment, '/')
+api.add_resource(PredictSentiment, '/predictsentiment')
+api.add_resource(OnlyTest, '/')
 
 
 if __name__ == '__main__':
