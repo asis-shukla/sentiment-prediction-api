@@ -5,3 +5,4 @@ uwsgi
 matplotlib
 scikit-learn
 requests
+flask-cors

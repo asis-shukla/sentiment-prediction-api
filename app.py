@@ -3,8 +3,10 @@ from flask_restful import reqparse, abort, Api, Resource
 import pickle
 import numpy as np
 from model import NLPModel
+from flask_cors import CORS
 
 app = Flask(__name__)
+cors = CORS(app, resources={r"*": {"origins": "*"}})
 api = Api(app)
 
 model = NLPModel()
